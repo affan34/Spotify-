@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+  background-color:#e41111;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.brand img {
+  width: 47px;
+  height: 50px;
+  padding:0 8px;
+}
+nav{
+  font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+  display: flex;
+  align-items:center;
+  list-style-type:none;
+  height:70px;
+  background-color:black;
+  color:white;
+}
+nav ul li{
+  padding:0 12px;
+}
+nav ul li:hover{
+  font-weight:bolder;
+  transform: scale(1.05);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  font-weight:bolder;
+  font-size:1.3rem;
+}
+.container{
+min-height: 60vh;
+  color:white;
+  font-family: 'Varela Round', sans-serif;
+  width:70vw;
+  display:flex;
+  margin:23px auto;
+border-radius:12px;
+  padding:34px;
+  background-image:url("https://images.mid-day.com/images/images/2022/feb/jfstand.jpg")
+}
+.bottom{
+  position:sticky;
+  height:130px;
+  background-color:#370101;
+  color:white;
+  bottom:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+    border: 0.25px solid white;
+}
+.bottomNot{
+  display: none;
+  position:sticky;
+  height:130px;
+  background-color:black;
+  color:white;
+  bottom:0;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.icons{
+  margin-top:14px;
+}
+.icons i{
+  cursor:pointer;
+}
+#myprogressbar{
+  width:80vw;
+  cursor:pointer;
+}
+.songitemcontainer{
+  margin-top:74px;
+}
+.songitem{
+  background-color:#f4d2d2;
+  color:black;
+  height:50px;
+  display:flex;
+  margin:12px 0;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:34px;
+   transition: 0.15s;
+}
+.songitem:hover{
+  transform: scale(1.06);
+}
+.songitem img{
+  width:43px;
+  margin:0 23px;
+  border-radius:34px;
+  height:43px;
+}
+.timestamp{
+  margin:0 23px;
+}
+.timestamp i{
+    cursor:pointer;
+}
+.songinfo{
+  display:flex;
+  flex-direction:row;
+  position:absolute;
+  left:4vw;
+  bottom: 1vh;
+  font-family: 'Varela Round', sans-serif;
+}
+.songinfo img{
+  opacity:0;
+  transition:opacity 1s ease-in;
+      height: 65px;
+    width: 100px;
+  position: relative;
+  left: 24vw;
+  bottom: 4vh;
+  display:none;
+}
+#mastersongname{
+  font-family: 'Varela Round', sans-serif;
+font-weight:bolder;
+    position: relative;
+      right:-263px;
+    bottom:6vh;
+    width: 155px;
+}
+.inline{
+    padding-left: 12px
+}
+.nowplaying{
+  position: relative;
+  left: 23vw;
+  
+}
+/* updown class css */
+.updown{
+   cursor:pointer;
+      font-size: 9vh;
+    position: relative;
+    bottom: 36px;
+}
+
+/* for container 1 */
+.container1{
+min-height: 60vh;
+  color:white;
+  font-family: 'Varela Round', sans-serif;
+  width:70vw;
+  display:flex;
+  margin:23px auto;
+border-radius:12px;
+  padding:34px;
+  background-image:url("https://wallpapers.com/images/hd/charlie-puth-all-out-performance-ef4ukutg8t510zm3.jpg")
+}
+/* for container 2 */
+.container2{
+min-height: 60vh;
+  color:white;
+  font-family: 'Varela Round', sans-serif;
+  width:70vw;
+  display:flex;
+  margin:23px auto;
+border-radius:12px;
+  padding:34px;
+  background-image:url("https://wallpapercave.com/wp/wp7224253.jpg");
+}
+.container-middle{
+  background-color:#b49bc8;
+  color:black;
+  width: 98.5vw;
+  height: 75vh;
+  
+}
+.profile{
+  padding-right: 6vw;
+  cursor:pointer;
+  transition : 0.35s;
+}
+.profile:hover{
+  transform : scale(1.06);
+  
+}
+.profilelist{
+  display:flex;
+  flex-direction:row;
+  overflow-x:scroll;
+  /* overflow-y:hidden; */
+  border-radius:16px;
+  padding: 12vh;
+}
+/* for chorme */
+.profilelist::-webkit-scrollbar{
+  display:none;
+}
+
+/* for firefox */
+.profilelist{
+  scrollbar-width:none;
+}
+.a1{
+  width: 16vw;
+  height: 35vh;
+  border-radius: 142px;
+}
+.artist{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Nunito', sans-serif;
+}
+.heading{
+ font-family: 'Varela Round', sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-top:4vh;
+}
+.credits{
+  background-color:#b49bc8;
+  color:white;
+  height:43vh;
+  margin-top:10vh;
+  color:black;
+  padding:18vh;
+}
+.credits1{
+  display : flex;
+  justify-content:center;
+font-family: 'Varela Round', sans-serif;
+  padding-bottom:5vh;
+  
+}
+.credit12{
+  font-family: 'Nunito', sans-serif;
+   display : flex;
+  justify-content:center;
+  padding-bottom:23vh;
+
+}
+.credit13{
+   font-family: 'Nunito', sans-serif;
+   display : flex;
+  justify-content:center;
+}
+.credit13{
+  font-family: 'Nunito', sans-serif;
+   display : flex;
+  justify-content:center;
+}
+.button{
+  display : flex;
+  justify-content:center;
+  background-color:black;
+  color:white;
+  position: relative;
+  top: -14vh;
+  padding:2vh;
+  width: 40vh;
+  left: 30vw;
+  border-radius: 41px;
+  transition:0.35s;
+    font-family: 'Nunito', sans-serif;
+}
+.button:hover{
+  cursor:pointer;
+  transform : scale(1.15);
+  
+}
+.last{
+  background-color:black;
+  height : 90vh;
+  overflow:hidden;
+}
+#last-img{
+  width:10vw;
+  display: flex;
+  position: relative;
+  left: 8vw;
+  top: 13vh;
+}
+.last1{
+  color:white;
+   font-family: 'Nunito', sans-serif;
+  display: flex;
+  position: relative;
+  left: 25vw;
+  top: 12vh;
+  
+}
+.a{
+  padding-right :4vw;
+}
+.last2{
+  color:white;
+    font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction:column;
+  font-weight:bolder;
+   position: relative;
+ left: 25vw;
+  top: 19vh;
+}
+.last3{
+ color:white;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction:column;
+  font-weight:bolder;
+  position: relative;
+  left: 35vw;
+  top:  -7vh;
+  width: 10vw;
+}
+.last4{
+ color:white;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction:column;
+  font-weight:bolder;
+  position: relative;
+  left: 47vw;
+  top:  -50vh;
+  width: 10vw;
+  
+}
+.b{
+padding-bottom: 5vh;
+  
+}
+.lastpic{
+    display: flex;
+    position: relative;
+    top: -80vh;
+    left: 76vw;
+}
+.lastpic1{
+  width:3vw;
+}
+.lastpic2{
+    display: flex;
+    position: relative;
+    top: -85vh;
+    left: 83vw;
+}
+.lastpic2a{
+  width:2vw;
+}
+.lastpic3{
+    display: flex;
+    position: relative;
+    top: -89vh;
+    left: 89vw;
+}
+.lastpic3a{
+  width:2vw;
+}
+.lastline{
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+    top: -72vh;
+    left: 89vw;
+  
+}
+.lastline2{
+   color:white;
+  font-family: 'Nunito', sans-serif;
+   display: flex;
+  flex-direction:column;
+  position: relative;
+    top: -67vh;
+    left: 84vw;
+  
+}
+
+ .albumart{
+   display:none;
+ }
+
+
+
+
+
+
+/* css for mobile */
+@media screen and (max-width:600px){
+#mastersongname{
+  bottom: 17vh;
+  right:-10px;
+}
+.bottom{
+  height: 100vh;
+  background-color:#181816;
+}
+  #myprogressbar{
+    width: 70vw;
+  position:relative;
+  top:1vh;
+  }
+  .icons{
+      position:relative;
+  top:18vh;
+  }
+  .updown {
+  font-size: 4vh;
+  bottom:170vw;
+  right:-80vw;
+}
+.nowplaying{
+    left: 17vw;
+    bottom: 82vh;
+}
+  .songinfo img{
+    left: -37vw;
+  top: -85vh;
+    display:none;
+  }
+.container1{
+  background-image:url("https://e1.pxfuel.com/desktop-wallpaper/604/74/desktop-wallpaper-charlie-puth.jpg")
+}
+  .container{
+    background-image:url("https://i.pinimg.com/originals/f9/02/7c/f9027c3fa6a6ae8468bc1042bdd7f1a3.jpg")
+  }
+  .conatainer2{
+     background-image:url("https://i.pinimg.com/originals/ab/8a/0e/ab8a0efedf81c080ea115a3f2d8f078e.jpg")
+  }
+.a1{
+  width: 28vw;
+  height: 14vh;
+  border-radius: 328px;
+}
+.container-middle{
+  width:100vw;
+  height:58vh;
+}
+  .profile {
+  padding-right: 14vw;
+  }
+  .profilelist{
+    padding: 12vh 6vw 12vh 6vw;
+  }
+.button{
+  width: 14vh;
+  left: -6.5vw;
+  top:-29vh;
+}
+  .credits1{
+    position: relative;
+  top: -10vh;
+  }
+  .credit12{
+    position: relative;
+  top: -10vh;
+  }
+  .credits{
+    height:55vh;
+  }
+  .credit13{
+    position: relative;
+  top: -25vh;
+  width: 81vw;
+  left: -25vw;
+  }
+  .last{
+   height:140vh;
+  }
+  #last-img{
+left: 12vw;
+  top: 5vh;
+    width:32vw;
+    padding-bottom:3vh;
+    
+  }
+  .last1{
+  left: 16vw;
+  top: 9vh;
+  flex-direction: column;
+  }
+  .a{
+    padding-bottom: 35vh;
+  }
+  .x{
+    top: -9vh;
+    position: relative;
+  }
+  .last2{
+    left: 17vw;
+  top: -98vh;
+}
+  .last3{
+    left: 17vw;
+  top: -92vh;
+  }
+  .last4{
+    left: 17vw;
+  top: -88vh;
+  }
+  .lastpic{
+    top: -86vh;
+  left: 14vw;
+  }
+  .lastpic1{
+    width:9vw;
+  }
+  .lastpic2{
+    top: -89vh;
+  left: 29vw;
+  }
+  .lastpic2a{
+    width:6vw;
+  }
+  .lastpic3{
+    top: -92vh;
+  left: 42vw;
+  }
+  .lastpic3a{
+    width:5vw;
+  }
+  .lastline{
+    top: -99vh;
+  left: 80vw;
+  }
+  .lastline2{
+    top: -97vh;
+  left: 65vw;
+  }
+
+  .albumart{
+    overflow:hidden;
+    background-image:cover;
+    display:flex;
+    background-color: black;
+  height: 30vh;
+  width: 60vw;
+    position:relative;
+    top:-11vh;
+    border:0.25px solid #d41111;
+    border-radius:15px 0px 15px 0px;
+    
+  }
+#previous{
+  position:relative;
+  left:-15vw;
+  bottom:13vh;
+}
+  #masterplay{
+  position:relative;
+  bottom:13vh;
+}
+  #forward{
+  position:relative;
+  bottom:13vh;
+    right:-15vw;
+}
+
+
+
+
+
+  
+}
